@@ -1,0 +1,23 @@
+<div class="container mt-3">
+    <div class="text-center mt-3">
+        <h2 class="text-center">
+            Employee List
+        </h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{ employee.firstName }}</td>
+                    <td>{{ employee.lastName }}</td>
+                    <td>{{ employee.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
