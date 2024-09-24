@@ -1,1 +1,24 @@
-<app-employee-list></app-employee-list>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a routerLink="employees" routerLinkActive="active" class="nav-link">Employee List</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="create-employee" routerLinkActive="active" class="nav-link">Add new Employee</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="position-relative py-2 px-4 text-bg-primary border border-secondary rounded-pill text-center">
+            Employee Management System made with Angular 10, Jdk 21, RDS
+        </div>
+    </div>
+</footer>
