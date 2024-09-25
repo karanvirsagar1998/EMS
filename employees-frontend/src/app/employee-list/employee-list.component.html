@@ -13,8 +13,8 @@
             <td class="text-center">{{ employee.lastName }}</td>
             <td class="text-center">{{ employee.emailId }}</td>
             <td>
-                <button type="button" class="btn btn-success me-2">Edit</button>
-                <button type="button" class="btn btn-danger ms-2">Delete</button>
+                <button (click)="updateEmployee(employee.id)" type="button" class="btn btn-success me-2">Edit</button>
+                <button class="btn btn-danger ms-2">Delete</button>
             </td>
         </tr>
     </tbody>
